@@ -1,80 +1,32 @@
-body {
-  margin: 0;
-  height: 100vh;
-  background: linear-gradient(135deg, #ff758c, #ff7eb3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Segoe UI', sans-serif;
-  color: white;
-  text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Caren 💖 My Valentine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.card {
-  background: rgba(255, 255, 255, 0.15);
-  padding: 40px 30px;
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-  max-width: 360px;
-  width: 90%;
-}
+  <div class="container">
+    
+    <h1 class="name">Caren Mwongeli 💕</h1>
 
-h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
+    <p class="love-message">
+      From the moment you came into my life,<br>
+      you brought smiles, warmth, and love.<br><br>
+      Caren, will you be my Valentine? 💖
+    </p>
 
-p {
-  font-size: 1.1em;
-  margin-bottom: 25px;
-  line-height: 1.5;
-}
+    <div class="buttons">
+      <button class="yes" onclick="sayYes()">Yes 💘</button>
+      <button class="no" onclick="moveNo()">No 🙈</button>
+    </div>
 
-.signature {
-  margin-top: 20px;
-  font-style: italic;
-  opacity: 0.9;
-}
+    <h2 id="message"></h2>
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
+  </div>
 
-button {
-  padding: 12px 25px;
-  font-size: 1em;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-
-.yes {
-  background: #ff2e63;
-  color: white;
-}
-
-.no {
-  background: #ffffff;
-  color: #ff2e63;
-}
-
-.thank-you {
-  display: none;
-  font-size: 1.7em;
-  animation: pop 0.6s ease;
-  padding: 20px;
-}
-
-@keyframes pop {
-  0% { transform: scale(0.5); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
-}
+  <script src="script.js"></script>
+</body>
+</html>
