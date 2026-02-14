@@ -1,32 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Caren 💖 My Valentine</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
 
-  <div class="container">
-    
-    <h1 class="name">Caren Mwongeli 💕</h1>
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  max-width: 400px;
+  width: 90%;
+}
 
-    <p class="love-message">
-      From the moment you came into my life,<br>
-      you brought smiles, warmth, and love.<br><br>
-      Caren, will you be my Valentine? 💖
-    </p>
+/* Name Styling */
+.name {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
 
-    <div class="buttons">
-      <button class="yes" onclick="sayYes()">Yes 💘</button>
-      <button class="no" onclick="moveNo()">No 🙈</button>
-    </div>
+/* Love Message Styling */
+.love-message {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #fff;
+  opacity: 0.95;
+}
 
-    <h2 id="message"></h2>
+/* Buttons */
+.buttons {
+  margin-top: 20px;
+}
 
-  </div>
+button {
+  padding: 12px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+.yes {
+  background: #ff2e63;
+  color: white;
+}
+
+.no {
+  background: white;
+  color: #ff2e63;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Floating hearts animation */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+}
